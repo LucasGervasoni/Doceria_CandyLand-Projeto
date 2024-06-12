@@ -1,0 +1,276 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+}
+
+.clear{
+    clear: both;
+}
+
+
+.btn_top{
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    position: fixed;
+    top: 96%;
+    left: 98%;
+    text-align: center;
+    font-size: 30px;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#header{
+    background: url(images/pexels-mccutcheon-1407346.jpg) no-repeat;
+    background-size:cover;
+    height: inherit;
+    
+    
+    & #navigation{
+        position: fixed;
+        z-index: 1;
+        left: 16%;
+        width: 70%;
+        max-width: 100%;
+        height: 70px;
+        background: linear-gradient(to right,#B4C3EC,#909EC8);
+
+            & .nav_image_logo{
+                position: relative;
+                bottom: 40px;
+                left: 60px;
+                float: left;
+
+                & img{
+                    width: 240px;
+                    height: 150px;
+                }
+            }
+
+            & .nav_items{
+                position: relative;
+                top: 22px;
+                right: 60px;
+                float:right;
+                list-style: none;
+
+                & li{
+                    position: relative;
+                    left: 20px;
+                    float: left;
+                    padding: 5px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+
+                    & a{
+                        color: #FFFFFF;
+                        text-decoration: none;
+                        transition:0.5s ease-in-out;
+
+                        &:hover{
+                            color: #ffffff96;
+                            transition: 0.5s ease-in-out;;
+                        }
+                    }
+                }
+
+                & .link_decoration{
+                    width: 200px;
+                    height: 70px;
+                    position: relative;
+                    bottom: 22px;
+                    left: 60px;
+                    text-align: center;
+                    background-color: #FB579D;
+
+                    & a{
+                        position: relative;
+                        top: 37%;
+
+                        &:hover{
+                            color: #FFFFFF;
+                            
+                            &::after{
+                                content: '>';
+                                font-size: 14px;
+                                position: relative;
+                                left: 3px;
+                                bottom: 1px;
+                            }
+                        }
+                    }
+                }
+            }
+    }
+}
+
+#about{
+    height: 100vh;
+    
+
+    & .container{
+        position: relative;
+        top: 20%;
+        width: 60%;
+        margin: 0 auto;
+
+        & .about_decoration{
+            position: relative;
+            bottom: 8em;
+            float: left;
+            width: 25%;
+            height: 550px;
+            background-color: #909EC8;
+
+            & img{
+                width: 350px;
+                height: 330px;
+                position: relative;
+                top: 60%;
+                left: 28%;
+            }
+        }
+
+        & .about_content{
+            width: 75%;
+            height: 600px;
+            float: right;
+            background-color: #EFECE4;
+
+            & h2{
+                margin-top: 1em;
+                margin-left: 1em;
+                color: #333333;
+                font-weight: 500;
+                font-size:70px;
+            }
+
+            & p{
+                width: 40%;
+                position: relative;
+                top: 20px;
+                left: 40%;
+                line-height: 32px;
+                font-size: 1.1em;
+                text-align: justify;
+                color:  #666666;
+            }
+        }
+    }
+}
+
+#menu{
+    height: 50vh;
+
+    & .container{
+        width: 80%;
+        text-align: center;
+        position: relative;
+        top: 20%;
+        margin: 0 auto;
+
+        & h2{
+            color: #333333;
+            font-weight: 500;
+            font-size:70px;
+        }
+
+        & #form{
+            margin-top: 2em;
+
+            & .field{
+                margin-top: 20px;
+                margin-bottom: 20px;
+
+                & label{
+                   display: block;
+                   font-size: 1.2em;
+                   font-weight: 500;
+
+                }
+
+                & input, textarea{
+                   width: 35%;
+                   height: 40px;
+                   border: 1px solid #666666;
+                }
+            }
+
+            & button{
+                width: 160px;
+                height: 40px;
+                cursor: pointer;
+                background-color: #FB579D;
+                color: #fff;
+                border: none;
+                border-radius: 3px;
+                font-weight: 700;
+                text-transform: uppercase;
+
+            }
+        }
+    }
+}
+
+#footer{
+    margin-top: 6em;
+    & div{
+        height: 50px;
+        content:'';
+        background-color: #333333;
+    }
+}
+
+.janela_modal{
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: #00000000;
+    backdrop-filter: blur(10px);
+
+    & .modal{
+        content: '';
+        width: 40%;
+        min-width: 450px;
+        min-height: 200px;
+        background-size: contain;
+        margin: 0 auto;
+
+        & img{
+            position: relative;
+            top: 0.5em;
+            width: 100%;
+            height: 900px;
+            z-index: 1;
+        }
+    }
+}
+
+& .fechar{
+    z-index: 2;
+    position: absolute;
+    top: 6px;
+    right: 29.7%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: none;
+    background-color: red;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.janela_modal.abrir{
+    display: block;
+}

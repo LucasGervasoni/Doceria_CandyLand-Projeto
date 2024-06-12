@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="images/png" href="images/icon_site.png">
+    <title>Doceria CandyLand</title>
+</head>
+<body>
+
+    <div class="janela_modal" id="janela_modal">
+        <div class="modal">
+            <button class="fechar" id="fechar">X</button>
+            <img src="images/menu.png" alt="">
+        </div>
+    </div>
+
+    <header id="header">
+        <nav id="navigation">
+            <a class="nav_image_logo" href=""><img src="images/logo.svg" alt="logo da doceria candyland"></a>
+            <ul class="nav_items">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li class="link_decoration"><a onclick="abrirModal()">Menu</a></li>
+            </ul>
+            <p class="clear"></p>
+        </nav>
+    </header>
+    <main>
+        <button class="btn_top" onclick="scrollToTop()">^</button>
+        <section id="about">
+            <div class="container">
+                <div class="about_decoration">
+                    <img src="images/donuts_sobre.webp" alt="donuts rosa com granulados">
+                </div>
+                <div class="about_content">
+                    <h2>Quem Somos?</h2>
+                    <p>
+                        A CandyLand é uma loja especializada em Donuts 
+                        nascida no Rio de Janeiro com o ideal de proporcionar 
+                        momentos deliciosos e fugir da rotina. 
+                        A CandyLand quer criar boas memórias. 
+                        Por isso nossa marca foi pensada para ser tudo que os 
+                        produtos são: uma variedade de sabor e qualidade 
+                        superiores!
+                    </p>
+                </div>
+                <p class="clear"></p>
+            </div>
+        </section>
+        <section id="menu">
+            <div class="container">
+                <h2>Faça seu pedido</h2>
+                <form id="form">
+                    <div class="field">
+                        <label for="username">Nome</label>
+                        <input name="username" type="text"  required>
+                    </div>
+                    <div class="field" >
+                        <label for="number">Telefone</label>
+                        <input name="number" type="text" required>
+                    </div>
+                    <div class="field">
+                        <label for="address">Pedido</label>
+                        <textarea name="message" placeholder="Informe seu endereço, seu pedido e a quantidade"  required></textarea>
+                    </div>
+                    <button onclick="finalizandoPedido()" id="submit" type="reset">Fazer Pedido</button>
+                </form>
+            </div>
+        </section>
+        <footer id="footer">
+            <div></div>
+        </footer>
+    </main>
+
+    <script src="/js/to_top.js"></script>
+    <script src="js/alert.js"></script>
+    <script src="js/modal.js"></script>
+</body>
+</html>
