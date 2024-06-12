@@ -89,6 +89,7 @@ body{
                     left: 60px;
                     text-align: center;
                     background-color: #FB579D;
+                    cursor:pointer;
 
                     & a{
                         position: relative;
