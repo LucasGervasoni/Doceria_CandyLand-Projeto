@@ -25,6 +25,9 @@ O que você aprendeu construindo esse projeto? Quais desafios você enfrentou e 
 
 - Projetos desse tipo forçam o estudante olhar a documentação da tecnologia, e eu vejo isso como um ponto positivo, pois nos prepara a entender como buscar e como funciona, pois o melhor curso que existe de cada linguagem é sua própria documentação.
 
+## Atualizações
+
+- Adicionado responsividade: Uso do Flexbox
 
 ## Licença
 
