@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     height: 100vh;
     font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
@@ -50,14 +54,11 @@ body{
                     color: #FFF;
                     text-decoration: none;
                     font-weight: 700;
+                    cursor: pointer;
                 }
             }
         }
     }
-}
-
-.btn_top{
-    display: none;
 }
 
 #about{
@@ -70,10 +71,14 @@ body{
         background-color: #EFECE4;
 
         & .about_decoration{
+            display: flex;
+            justify-content: center;
             width: 75vw;
 
             img{
+            
                 width: 100%;
+                max-width: 50vw;
             }
         }
 
@@ -155,6 +160,54 @@ body{
         height: 50px;
         background-color: #333333;
     }
+}
+
+.janela_modal{
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: #00000000;
+    backdrop-filter: blur(10px);
+
+    & .modal{
+        content: '';
+        width: 40%;
+        min-width: 90vw;
+        min-height: 100px;
+        background-size: contain;
+        margin: 0 auto;
+
+        & img{
+            position: relative;
+            top: 0.5em;
+            width: 100%;
+            min-height: 600px;
+            max-height: 900px;
+            z-index: 1;
+        }
+    }
+}
+
+.fechar{
+    z-index: 999;
+    position: absolute;
+    top: 4px;
+    right: 4%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: none;
+    background-color: red;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.janela_modal.abrir{
+    display: block;
 }
 
 @media screen and (min-width:1024px){
