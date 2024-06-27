@@ -14,8 +14,13 @@ body{
     overflow-x: hidden;
 }
 
+.btn_top{
+   display: hidden;
+}
+
+
 #header{
-    width: 100w;
+    width: 100vw;
     height: 100vh;
     background: url('images/donuts_mobile.jpeg') no-repeat;
     background-size: cover;
@@ -210,6 +215,21 @@ body{
     display: block;
 }
 
+@media screen and (min-width:768px){
+
+    .btn_top{
+        background: rgba(0, 0, 0, 0.4);
+        color: #fff;
+        position: fixed;
+        top: 96%;
+        left: 92%;
+        text-align: center;
+        font-size: 30px;
+        padding: 5px;
+        border: none;
+        cursor: pointer;
+    }
+}
 @media screen and (min-width:1024px){
     #about{
 
@@ -224,20 +244,14 @@ body{
             }
         }
     }
+    .btn_top{
+        left: 96%;
+    }
 }
 @media screen and (min-width:1440px){
     
     .btn_top{
-        background: rgba(0, 0, 0, 0.4);
-        color: #fff;
-        position: fixed;
-        top: 96%;
         left: 98%;
-        text-align: center;
-        font-size: 30px;
-        padding: 5px;
-        border: none;
-        cursor: pointer;
     }
     
     #header{
