@@ -10,7 +10,8 @@ Status do Projeto: concluido ✔️
 
 ## Imagem do projeto
 
-![imagem da doceria](image.png)
+![DoceriaCandyLand](https://github.com/user-attachments/assets/e6e26b18-454b-4b53-b190-5b041fbdb6b2)
+
 
 
 ## Descrição do Projeto
